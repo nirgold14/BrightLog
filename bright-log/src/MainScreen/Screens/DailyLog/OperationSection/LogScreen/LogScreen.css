@@ -1,0 +1,23 @@
+
+
+.FixedHeightContainer
+{
+  float:right;
+  width:100%; 
+  padding:3px; 
+  
+}
+.Content
+{
+    display:flex;
+    flex-direction:column;
+    height:37rem;
+    overflow:auto;
+    background-color:rgb(208, 214, 220);
+    box-shadow: 8px 5px 10px 10px rgb(0,0,0,0.8); 
+    margin-top:1.2rem;       
+}
+
+.small-font{
+    font-size:1px;
+}

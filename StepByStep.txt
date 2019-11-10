@@ -1,0 +1,88 @@
+In this guide I will document all of my steps in order to create the app.
+
+----- Step 1 - Mongo-DB:
+
+----- Step 2 - BACK:
+        
+    1. Install Node
+        * download from web
+        * $node || Run node
+        * NPM - Node Package Manager - already installed when download node
+    
+    2. Create API (Actuall server)
+        * create the API dir --> create server.js
+        * $npm init || init it as npm project.
+            - choose API name
+        * Express Package - help us with REST HttpRequest
+            - //api/ --> $npm install --save express || --save insert it to package.json
+            - it inside the node Modules
+        *Package.json
+            - Check dependencies for express module
+            - npm install at this path install all the dependencies. ( ! Important ! )
+    
+    3. Important Imports at server.js
+            - var express = require('express'); 
+            - var app = express(); || object from express that will handle all of our web requests.
+    
+    4. Connect to DB
+           
+            
+    4. Define the listening port
+        * app.listen(3000, function(){
+                console.log("API is Running on port 3000 ")
+            });
+
+----- Step 3 - FRONT:
+    
+    1. React
+        
+        * Go to https://facebook.github.io - We will use theie skelteon:
+        * $ npm install -g create-react-app || import the npm pacakge that will save globaly and help us to run the react without tooling manually. || Once
+        * $ create-react-app "ProjectName"
+        * $ cd ProjectName
+        * $ npm start
+        
+    2. What inside?
+    
+        * node Moudles
+        * package.json:            
+            - describe dependencies
+            - describe scripts and saved words - the actuall scripts are in: nodeModules/ReactScripts/package.json
+        * public: static vars the react familiar with - won't change
+        * App-test: for unit testing
+    
+    3. Setting Up The API
+    
+        * Preperations:
+            - accquire the Backend Directory from step 2.
+            - activate Mongo server: $ mongod
+            - activate API server: $nodemon server.js (nodemon refresh server at every change in code)
+            
+        * Create Http Service To interact with server:
+            - cd to the react project: $npm install --save whatwg-fetch (Library for HTTP req)
+            - import at services\http.service.js
+            - We are writing it in js
+            - The Functions are ES6 js: 
+                randomFunc = (param1,param2) => { }
+            - using fetch('http://API SERVER PATH/dbTableName')
+            
+----- Step 4 - Extensions:
+
+    1. BootsTrap
+    
+        * Download bootstrap - it will show you 2 folders (We already downloaded it in the BootsTrap project)
+        * create in your 'public' dir, 2 new dirs: css , js
+        * copy inside those dirs:
+            - bootstrap.min.js
+            - bootstrap.min.css
+        * Bootstrap needs Jquery and Library-Tether (system for grid)
+            - Download jquery compressed cdn from jquery weebsite
+            - save the jquery-3.4.0.min to the js directory
+            - same as tether..download and extract min.js to js folder like in this project.
+        * Import everything in the index.html:
+            - <link rel=stylesheet href="%PUBLIC_URL%/css/bootstrap.min.css">
+            - <script src="%PUBLIC_URL%/js/jquery-3.4.1.min.js"></script>
+            - <script src="%PUBLIC_URL%/js/tether.min.js"></script>
+            - <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+            
+    2. 

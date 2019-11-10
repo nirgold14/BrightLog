@@ -1,0 +1,35 @@
+.todo-item{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5%; 
+    background-color:white;
+    border-radius: 20px;
+}
+
+.todo-item:hover{
+    font-size: 19px;
+    transition: .3s ease-in-out;
+}
+
+.tdl-text{
+    display: block;
+    margin:auto;
+    margin-left:0;
+    max-width:90%;
+    color:black;
+    padding:3px;
+    padding-left:6px;
+}
+
+a.remove-btn{
+    color:red;
+    margin-left:2px;
+    margin-right:5px;
+    text-decoration: none;
+        
+}

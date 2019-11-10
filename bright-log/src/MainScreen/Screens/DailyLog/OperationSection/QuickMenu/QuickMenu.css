@@ -1,0 +1,139 @@
+.quick-action-wrapper{
+    display:flex;
+    flex-direction: column;
+    min-height:200px;
+    width:100%;
+      
+}
+
+.quick-action-item{
+    margin-top:5px;
+    margin-bottom:5px;
+    background-color: transparent;
+    padding:4px;
+    border:0;
+    margin-left:5px;
+    width:100%;
+
+}
+
+.quick-title{
+   
+    color:white;
+    background-color: black;
+    padding:2px;
+    text-align: left;
+    padding-left:3px;
+    display: block;
+    margin-bottom: 0px
+}
+
+.quick-title-extract{
+    flex:1;
+    color:white;
+    background-color: rgb(0, 0, 0,0.8);
+    padding:2px;
+    text-align: center;
+    display: block;
+    margin-bottom: 0px;
+   
+}
+
+.quick-btn-section{
+    display: flex;
+    justify-items: flex-start;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+}
+
+
+.card-link.eva-fsr-btn{
+    flex: 1;
+    font-size:1.3rem;
+    color:black;
+    padding:0.2rem;
+    margin:0px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.eva-fsr-btn:hover{   
+   box-shadow: 2px 2px 5px black;   
+}
+
+.chosen-menu-btn-active{
+    background-image: linear-gradient(rgba(116, 196, 116, 0.658), rgb(76, 182, 76));
+    box-shadow: 2px  2px 2px rgb(0, 0, 0,0.5);
+    opacity:1
+}
+
+.chosen-menu-btn-close{
+    background-image: linear-gradient(rgba(196, 116, 116, 0.658), rgb(182, 76, 76));
+    box-shadow: 2px  2px 2px rgb(0, 0, 0,0.5);
+    opacity:1
+}
+
+#chosen-menu-btn-close:hover{
+    box-shadow: 2px 2px 5px black;  
+}
+#chosen-menu-btn:hover{
+    box-shadow: 2px 2px 5px black;  
+}
+
+.extraction-container1{
+    display: inherit ;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.extraction-container2{
+    display: inherit ;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-link.link-extract{
+    flex:1;
+    padding:0.2rem;
+    color:black;
+    margin:0px;
+}
+
+.link-extract:hover{   
+    box-shadow: 2px 2px 5px black;   
+ }
+
+ .no-border{
+     border:none;
+ }
+
+ .esd-btn{
+     display: block;
+     margin:auto;
+    background: linear-gradient(rgb(255, 11, 11), rgb(182, 76, 76));
+    width:8rem;
+    height:8rem;
+    border:1px solid rgb(0, 0, 0,0.5);
+    border-radius: 100%;
+    box-shadow: 0px 5px 20px black;
+    transition: 0.5s;
+    padding:auto;
+
+ }
+
+ .esd-btn:hover{  
+    box-shadow: none;
+    text-decoration: none;
+    
+ }
+
+ .esd-text{
+    margin-top:2.5rem;
+    margin-bottom:2.5rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2rem;
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    
+
+ }

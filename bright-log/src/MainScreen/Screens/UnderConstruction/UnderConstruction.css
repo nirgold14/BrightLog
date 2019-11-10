@@ -1,0 +1,13 @@
+.build-img{
+    display:block;
+    margin:auto;
+    margin-top:50px;    
+    transition: 0.7s;
+    height:500px;
+    width:500px;
+}
+
+.build-img:hover{
+    width:550px;
+    height:550px;
+}

@@ -1,0 +1,24 @@
+.Clock-Wrap{
+    height:50px;
+    align-self: center;
+    border: 1px black solid;
+    padding:1px;
+    opacity: 0.8;
+   }
+
+.card-body{   
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding:0px;
+ 
+    
+}
+
+.card-body h4{
+   display: block;
+   margin:8px;
+    
+}
+

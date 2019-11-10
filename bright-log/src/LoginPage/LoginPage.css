@@ -1,0 +1,63 @@
+.row.login{
+    background-color: #e6f2ff; 
+    height:100%;
+        
+    
+}
+
+.signin-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+
+ 
+.card.signin-card{
+    margin-top: 10%;
+    padding: 10px 0px 20px;
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.5)
+}
+
+.card-body.signin-body{
+    flex-direction: column;
+    background-color: transparent;
+    ; 
+    
+
+    
+}
+img.signin-img{
+    border:2px solid rgba(0,0,0,.3);
+    border-radius: 20px;
+    padding:3px;
+    background-color:white;
+    display:block;
+    margin:auto;
+    margin-bottom:15px;
+    width:80%;
+}
+
+form.signin-form{
+    max-width:450px;
+    margin:auto;
+}
+
+button.signin-btn{
+    color:white;
+    background-color:#4285F4;
+    width:100%; /*inherit the size of the parent-form*/
+    margin-bottom: 10px;    
+}
+
+a.create-new-acc{
+    font-size: 1.1rem;
+    text-align:center;
+    display:block;
+    margin-top:15px;
+    margin-bottom: 15px;
+}

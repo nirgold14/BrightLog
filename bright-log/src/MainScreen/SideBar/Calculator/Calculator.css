@@ -1,0 +1,82 @@
+
+.calc-Wrap {   
+    height:100%;
+    background-color: #4285F4;
+    padding-top:10px;
+    padding-left:25px;
+    padding-bottom:10px;
+    border-radius: 2%;
+    }
+
+
+.screen-section{
+    height:40px;
+    margin-bottom: 6px;
+    width:96%;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.card-text.screen-text{
+    display: block;
+    margin:auto;
+    font: 'digital7';
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+.numbers-section{
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+    padding:0px;
+    margin-top: 1px;
+    align-content: space-between
+     
+}
+
+.number-btn{
+    margin-right: 2px;
+    width:30%;
+    box-shadow: 5px 4px 0.9
+        
+}
+
+.padding-0{
+    padding: 0px;
+}
+
+.op-section{
+    display: flex;
+    flex-direction: column;
+    height:100px;
+  
+}
+
+.op-btn{
+    padding:0px;
+    font-size: 13.5px;
+    width: 90%;
+    margin-bottom: 3.5px;
+    
+}
+
+.clear-btn{
+    background-color: #DB4437;
+    color:white;
+        
+
+}
+
+a.number-link:hover{
+    text-decoration: none;
+    color: black;
+}
+
+a.number-link:click{
+    font-size: 200px;
+}
+
+
+    
+    

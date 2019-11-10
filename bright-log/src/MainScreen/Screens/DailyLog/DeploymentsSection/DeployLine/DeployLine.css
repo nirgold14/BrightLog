@@ -1,0 +1,31 @@
+.deploy-checkLine{
+    display:flex;
+    flex-direction: row;
+    padding:5px;
+    background: none;
+    border:none;
+    
+}
+
+a.deploy-checkBtn{
+    height:1.3rem;
+    width:1.3rem;
+    border:2px black solid;
+    transition: 1s;
+    border-radius: 50%;
+}
+
+.deploy-checkLine p{
+    margin:auto;
+    margin-left:15px;
+    font-size:1.1rem;
+}
+
+.deploy-checkLine a:hover{
+    height:1.63rem;
+    width:1.63rem;    
+}
+
+a.deploy-checkBtn.active{
+    background-color: green;
+}

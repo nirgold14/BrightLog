@@ -1,0 +1,49 @@
+.group-container{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.group-btn{
+       background-color: white;
+       width:15%;
+       margin-left:0px;
+       
+}
+.group-btn-text{
+    font-family: 'Roboto', sans-serif;
+    margin:5px;
+    color:black;
+    box-shadow: 0px 4px 10px black;
+    transition:0.5s;
+    background-color: whitesmoke;
+    color:black;
+}
+
+.green-background{
+    background-color: green;
+    color:white;
+}
+
+.group-btn-text:hover{
+    box-shadow: none;    
+}
+
+.group-btn:hover{
+    text-decoration: none;
+}
+
+.group-content{
+   margin-left:15px;
+   min-height:200px;
+   background-color: whitesmoke;
+   border: 1px solid rgb(0,0,0,0.5);
+   border-radius: 2px;
+   min-width:200px;
+   padding: 6px;
+}
+
+.no-side-margin{
+    margin-left:0px;
+    margin-right:0px;
+}

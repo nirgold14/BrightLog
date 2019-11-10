@@ -1,0 +1,42 @@
+.user-welcome{
+    flex-direction: row;
+    width: 300px;
+    background: none;
+    border:none;
+    margin-left:3px;
+}
+
+.welcome-body{
+    align-items: center;
+    padding-left: 10px;
+    padding-right:0px; 
+}
+
+.user-img{
+    height:50px;
+    width:50px;
+    border: 2px solid black;
+    
+}
+.user-img:hover{
+    height:55px;
+    width:55px;
+   
+} 
+
+.welcome-text{
+    margin:0;
+    font-size: 20px;
+    
+}
+
+.logout{
+    margin-left:6px;
+    opacity: 0.4;
+    padding-right:0; 
+}
+
+.logout:hover{
+    opacity: 1;
+    color: navy;
+}

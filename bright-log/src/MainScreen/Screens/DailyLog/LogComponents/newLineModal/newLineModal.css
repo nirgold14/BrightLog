@@ -1,0 +1,131 @@
+/* The popup form - hidden by default */
+
+.form-popup {
+    display: none;
+    position: absolute;
+    border: 40px solid #070707;
+    z-index: 1;
+}
+
+#mydiv {
+    display: block;
+}
+
+#none {
+    display: none;
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
+    min-width: 500px;
+    padding: 10px;
+    background-color: white;
+    border: solid 4px rgb(0, 0, 0, 0.5)
+}
+
+
+/* Full-width input fields */
+
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* When the inputs get focus, do something */
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/login button */
+
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: red;
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.card.btn-holder-checkLine {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    text-align: left;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.btn-Holder{
+    display: flex;
+    flex-flow: row;
+  
+    
+}
+
+.newCheckLineBtn {
+    font-size: 20px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    margin-right:5px;
+}
+
+.btn-primary.lineTypeBtn{
+    width:100%;
+    margin: 5px;
+    margin-bottom: 12px;
+   
+}
+
+.add_close-btn{
+    width:100%;
+    margin: 5px;
+}
+
+.new-line-label {
+    text-align: left !important;
+    align-self: left;
+}
+
+.small_right_margin{
+    margin-right: 4px;
+}

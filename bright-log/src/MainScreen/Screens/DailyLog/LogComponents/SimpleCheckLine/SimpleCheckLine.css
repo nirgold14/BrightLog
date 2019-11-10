@@ -1,0 +1,134 @@
+.line-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-items:center;
+    padding:10px;
+    background-color: transparent;
+    border-radius: 3px;;
+    align-items: center;
+}
+
+.group-line{
+    justify-content: space-between;
+    padding:0px;
+    padding-right:15px;
+}
+.time-stamp{
+    margin-left:12px;
+    margin-right:15px;
+    font-size:20px;
+    padding:5px;
+    transition: 2s;
+    box-shadow:2px 2px 4px black;
+    max-height:42px;
+}
+
+.checkBox{   
+    width:40px; 
+    box-shadow:2px 2px 4px black;  
+}
+
+.my-check-box{
+    width:100%;
+    margin:auto;
+    color:white;
+    font-size:25px;
+    padding:0px;
+    margin-top:3px;
+}
+
+.my-check-box:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.checked{
+    background-color: green;
+    box-shadow: 0px 0px 10px rgb(126, 180, 126);
+    transition: 2s;
+}
+
+.line-text{
+    border-radius:2px;
+    line-height: 2rem;
+    font-size:1.3rem;
+    padding:8px;
+    margin-right:10px;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    text-align:left;
+    max-width:75%;
+   }
+
+.line-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;    
+}
+
+.my-check-box-clicked{
+    height:98%;
+    width:100%;
+    margin:auto;
+    color:white;
+    font-size:25px;
+    padding:0px;
+    margin-top:3px;
+    background-color: green;
+    box-shadow: 0px 0px 10px rgb(126, 180, 126);
+    transition: 2s;
+
+}
+
+.tf-body{
+    display:flex;
+    flex-direction: row;
+    width:200px;
+    background: none;
+    border:none;
+}
+
+.red-border{
+    border: 3px solid red
+}
+
+.tf-btn{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace;
+ color:black;
+ padding:2px;
+ box-shadow: 2px 2px 5px black; 
+ transition: 0.3s;
+ background-color: whitesmoke;
+ width:50%;
+}
+
+.tf-btn:hover{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:black;
+}
+
+.chosen#true{
+    color:white;
+    background-color: green;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 2px;
+}
+
+.chosen#false{
+    color:white;
+    background-color: rgb(128, 0, 0);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 2px;
+
+}
+
+
+
+
+
+
+
+
+

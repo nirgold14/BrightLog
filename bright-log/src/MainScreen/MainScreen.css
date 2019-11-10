@@ -1,0 +1,75 @@
+
+.hide {
+    display: none;
+}
+
+.MainScreen{
+    height:100%;
+    
+    
+}
+.container-fluid.UserMain{
+    padding:0;
+  
+}
+
+.SideBar{    
+    display: block;
+    background-color: #e6f2ff; 
+    text-align: center;
+    
+}
+
+.col-sm-2.pad-left-0{
+    padding-left: 0px;
+}
+
+
+
+.sidebar-col{
+    padding-left:0px;
+    z-index: 0;
+    
+}
+
+.height-80{
+    height: 90%;
+}
+
+.float-arrow-side{
+    position: relative;
+    display: block;
+    top:50%;
+    left:-40px;
+    z-index: 1;
+    width:50px;
+}
+
+.float-arrow-side{
+    position: relative;
+    display: block;
+    top:50%;
+    left:-45px;
+    z-index: 1;
+ 
+   
+}
+
+
+.float-arrow-main{
+    position: fixed;
+    display: block;
+    top:50%;
+    right:10px;    
+    z-index: 1;
+   
+    
+}
+
+
+.arrow-img{
+    height:40px;
+    width:40px;
+}
+
+

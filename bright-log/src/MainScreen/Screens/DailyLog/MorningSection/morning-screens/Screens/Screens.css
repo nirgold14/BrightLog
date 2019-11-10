@@ -1,0 +1,30 @@
+.screens-wrapper{
+   display: flex;
+   flex-direction: row;
+   width:100%;
+}
+
+.station-card{
+    margin:auto;
+    width:23%;
+    border: 2px solid rgba(0,0,0,0.7);
+    padding-bottom: 10px;
+   }
+
+.screen-card{
+    min-height:100px;
+    margin:1px;
+    padding:1px;
+}
+
+.screen-card img{
+   height:120px;   
+}
+
+.padding-left-0{
+    padding-left: 0px;
+   
+}
+.padding-right-0{
+    padding-right: 2px;
+}
