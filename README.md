@@ -14,5 +14,5 @@ Her purpose is to gather all the operator needs in one place , and help the oper
 
   * Message board that will solve the problem of lost information while operators's shift swaps.
 
-
+For better experience you can watch the Purpose video: 'BrightLog-FINISH.mp4'
 
