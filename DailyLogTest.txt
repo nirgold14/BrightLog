@@ -1,0 +1,16 @@
+14.11.2019 
+
+Morning Checklist: 
+
+ Verifications: 
+
+Cameras: 
+
+Ready: 
+
+Operation Sequence: 
+13:04:43 - SFINCS is with ACTIVE permissions.
+
+EOD: 
+13:05:23 - Verify that mail Sent with the EOD meeting summary + cleaning plan for tomorrow.
+13:05:24 - Verify that SUNUP updated with the relevant WOs.

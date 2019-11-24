@@ -1,4 +1,6 @@
-import 'whatwg-fetch';
+import 'whatwg-fetch'; //fetch resources asynchronously
+import notificationService, { NOTIF_Messages_changed } from './notificationsService'
+const ns = new notificationService();
 
 let instance = null;
 
@@ -17,11 +19,6 @@ class HttpService {
         return instance;
     }
 
-    /**
-     *   Http Request:  GET 
-     *   Path:         /Forum
-     *   Purpose:      return all the forum messages*  
-     **/
 
     getAllMessages = () => {
         console.log("get all Messages")
@@ -29,7 +26,6 @@ class HttpService {
 
             fetch('http://localhost:3005/Forum')
                 .then(response => {
-
                     resolve(response.json());
                 }
                 )
@@ -42,7 +38,7 @@ class HttpService {
     *   Path:         /Forum
     *   Purpose:      Add new forum msg bject to DB  
     **/
-    addNewMsg = (msg) => {
+    addNewMsg = msg => {
 
         var promise = new Promise((resolve, reject) => {
 
@@ -52,7 +48,7 @@ class HttpService {
                 headers: { 'Content-Type': 'application/json' }
             })
                 .then(response => {
-
+                    ns.postNotification(NOTIF_Messages_changed, "")
                     resolve(response.json());
                 })
         });
@@ -75,9 +71,13 @@ class HttpService {
                 })
             }
             fetch('http://localhost:3005/Forum', options)
-                .then(res => res.json())
-                .then(res => console.log(res))
-                .catch(error => console.error('Error: ${error}'))
+                .then(response => {
+                    ns.postNotification(NOTIF_Messages_changed, "")
+                    resolve(response.json());
+                })
+                .catch(err => {
+                    reject(err)
+                })
         });
         return promise;
     }
@@ -85,21 +85,18 @@ class HttpService {
     /**
     *   Http Request: GET 
     *   Path:         /CheckLine
-    *   Purpose:      Return the checklines that match the paramaters (category | sub_category | sub_sub_category)  
+    *   Purpose:      Return the checklines that match the paramaters (category | sub_category )  
     **/
-    getCheckLines = (category, sub, sub_sub) => {
-        console.log("get all checklines")
+    getCheckLines = (category, sub) => {
         var promise = new Promise((resolve, reject) => {
-            var url = new URL('http://localhost:3005/CheckLine')
-            var params = { category: category, sub_Category: sub, sub_sub_Category: sub_sub }
-            url.search = new URLSearchParams(params).toString();
-
+            var url = new URL("http://localhost:3005/CheckLine"),
+                params = { category: category, sub_Category: sub }
+            Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
             fetch(url)
                 .then(response => {
-
                     resolve(response.json());
-                }
-                )
+                })
+                .catch(err => console.log(err.message))
         });
         return promise;
     }
@@ -116,7 +113,6 @@ class HttpService {
 
             fetch('http://localhost:3005/OperationLine')
                 .then(response => {
-
                     resolve(response.json());
                 }
                 )
@@ -129,17 +125,16 @@ class HttpService {
     *   Path:         /OperationLine
     *   Purpose:      Add new OperationLine object to DB  
     **/
-    addNewOperationLine = (line) => {
+    addNewOperationLine = (data) => {
 
         var promise = new Promise((resolve, reject) => {
 
             fetch('http://localhost:3005/OperationLine', {
                 method: 'POST',
-                body: line,
+                body: data,
                 headers: { 'Content-Type': 'application/json' }
             })
                 .then(response => {
-
                     resolve(response.json());
                 })
         });
@@ -156,7 +151,7 @@ class HttpService {
         var promise = new Promise((resolve, reject) => {
 
             fetch('http://localhost:3005/OperationLine/updatePrevID', {
-                method: 'POST',
+                method: 'PATCH',
                 body: mainID, changeID,
                 headers: { 'Content-Type': 'application/json' }
             })
@@ -174,7 +169,7 @@ class HttpService {
         var promise = new Promise((resolve, reject) => {
 
             fetch('http://localhost:3005/OperationLine/updateNextID', {
-                method: 'POST',
+                method: 'PATCH',
                 body: mainID, changeID,
                 headers: { 'Content-Type': 'application/json' }
             })

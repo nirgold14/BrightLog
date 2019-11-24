@@ -34,8 +34,10 @@ function DailyLog() {
      *  Using 'number' to decide  which screen is called & 'category' to decide which data to retrieve.
      **/
     function toggleScreens(number, category) {
-        if (number != 0) {
+        if (number == 1) {
             getCheckLines(category)
+        } else if (number == 2) {
+            getCheckLines(category, 'eod')
         }
 
         for (var i = 0; i < screens.length; ++i) {
@@ -56,8 +58,8 @@ function DailyLog() {
     /**
      * Creates a GET Http Request for all the CheckLines object, and set the state with the new data.
      */
-    function getCheckLines(category, sub, sub_sub) {
-        http.getCheckLines(category, sub, sub_sub).then(data => {
+    function getCheckLines(category, sub) {
+        http.getCheckLines(category, sub).then(data => {
             setData(data);
         }, err => {
 

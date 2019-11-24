@@ -42,6 +42,6 @@
 
 --- Tips & Tricks
 
-* mongoose.model('Product',product) - It's define the features of the model, so no other data can enter this model.
+* ose.model('Product',product) - It's define the features of the model, so no other data can enter this model.
 
 

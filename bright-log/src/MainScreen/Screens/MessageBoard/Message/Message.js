@@ -5,7 +5,7 @@ import user2 from './user2.PNG';
 import user3 from './user3.PNG';
 
 import HttpService from '../../../../services/httpService';
-import notificationService, { NOTIF_Messages_changed, NOTIF_seeMsg } from '../../../../services/notificationsService'
+import notificationService, { NOTIF_seeMsg } from '../../../../services/notificationsService'
 const http = new HttpService();
 const ns = new notificationService();
 
@@ -48,7 +48,7 @@ function Message(props) {
                 id: _id
             }))
         }
-        ns.postNotification(NOTIF_Messages_changed)
+
     }
 
     // Invoke when the seeMsg btn is pressed - causing a screen change.

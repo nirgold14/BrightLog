@@ -128,7 +128,7 @@ function NewLineModal(props) {
                 prevID: (props.id),
                 nextID: (props.nextID),
             }
-            http.addNewOperationLine(JSON.stringify({ line }))
+            http.addNewOperationLine(JSON.stringify(line))
             http.updatePrevID(JSON.stringify({ mainID: props.nextID, changeID: id }))
             http.updateNextID(JSON.stringify({ mainID: props.id, changeID: id }))
             closeForm()

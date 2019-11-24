@@ -48,7 +48,7 @@ function NewMessage() {
         MsgDate = MsgDate.toLocaleDateString() + "-" + MsgDate.toLocaleTimeString();
 
         http.addNewMsg(JSON.stringify({
-            importance: { importance },
+            importance: importance,
             date: MsgDate,
             author: userNames[Math.floor(Math.random() * userNames.length)],
             subject: document.getElementById("msg-subject").value,
